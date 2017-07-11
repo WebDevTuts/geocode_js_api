@@ -22,6 +22,9 @@
       })
       .then(function(response) {
         console.log(response);
+
+        // Formated address
+        var formattedAddress = response.data.results[0].formatted_address;
       })
       .catch(function(error) {
         console.log(error);
