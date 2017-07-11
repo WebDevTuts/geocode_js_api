@@ -11,6 +11,7 @@
 <body>
   <div class="container">
     <div id="formatted-address"></div>
+    <div id="address-components"></div>
   </div>
 
   <script>
@@ -47,6 +48,7 @@
 
         // Output to app
         document.getElementById('formatted-address').innerHTML =formattedAddressOutput;
+        document.getElementById('address-components').innerHTML = addressComponentsOutput;
       })
       .catch(function(error) {
         console.log(error);
