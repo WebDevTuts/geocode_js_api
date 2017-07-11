@@ -9,7 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
 </head>
 <body>
-
+  <div class="container">
+    <div id="formatted-address"></div>
+  </div>
 
   <script>
     function geocode() {
@@ -30,6 +32,9 @@
             <li class="list-group-item">${formattedAddress}</li>
           </ul>
         `;
+
+        // Output to app
+        document.getElementById('formatted-address').innerHTML =formattedAddressOutput;
       })
       .catch(function(error) {
         console.log(error);
