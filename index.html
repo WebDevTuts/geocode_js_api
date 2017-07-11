@@ -27,6 +27,9 @@
     // Get Location form
     var locationForm = document.getElementById('location-form');
 
+    // Listen for form submit
+    locationForm.addEventListener('submit', geocode);
+
     function geocode() {
       var location = 'Holland Village Singapore';
       axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
