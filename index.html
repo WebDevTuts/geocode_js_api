@@ -12,6 +12,7 @@
   <div class="container">
     <div class="card-block" id="formatted-address"></div>
     <div class="card-block" id="address-components"></div>
+    <div class="card-block" id="geometry"></div>
   </div>
 
   <script>
@@ -59,6 +60,7 @@
         // Output to app
         document.getElementById('formatted-address').innerHTML =formattedAddressOutput;
         document.getElementById('address-components').innerHTML = addressComponentsOutput;
+        document.getElementById('geometry').innerHTML = geometryOutput;
       })
       .catch(function(error) {
         console.log(error);
